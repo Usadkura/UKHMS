@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#087f69"><meta name="description" content="UKHMS hospital management system prototype">
+<title>UKHMS | Usadkura Hospital Management System</title>
+<link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="login" class="login-wrap">
+  <div class="login-card"><div class="brand-mark">✚</div><h1>UKHMS</h1><p class="muted">Usadkura Hospital Management System</p>
+    <label for="staffName">Full Name</label><input id="staffName" placeholder="Enter your full name" autocomplete="name">
+    <label for="staffId">Staff ID</label><input id="staffId" placeholder="Enter your Staff ID">
+    <button id="loginBtn" class="primary wide">Enter Dashboard</button><p class="login-note">Prototype sign-in only. This is not secure authentication and must not be used with real patient information.</p>
+  </div><span class="watermark">UKHMS</span>
+</div>
+<div id="app" class="app hidden">
+<aside class="sidebar" id="sidebar"><div class="brand"><span class="brand-mark small">✚</span><div><strong>UKHMS</strong><small>Hospital System</small></div></div>
+<div class="nav-label">MAIN MENU</div><nav id="nav">
+<button class="nav-item active" data-view="dashboard">▦ <span>Dashboard</span></button>
+<button class="nav-item" data-view="patients">♙ <span>Patients</span></button>
+<button class="nav-item" data-view="staff">♧ <span>Staff & Doctors</span></button>
+<button class="nav-item" data-view="departments">▤ <span>Departments & Units</span></button>
+<button class="nav-item" data-view="pharmacy">⚕ <span>Pharmacy</span></button>
+<button class="nav-item" data-view="equipment">⚙ <span>Equipment</span></button>
+<button class="nav-item" data-view="laboratory">⌕ <span>Laboratory</span></button>
+<button class="nav-item" data-view="admissions">▣ <span>Admissions & Wards</span></button>
+<button class="nav-item" data-view="mortuary">♢ <span>Mortuary Records</span></button>
+<button class="nav-item" data-view="reports">▥ <span>Reports</span></button>
+</nav><div class="sidebar-foot">Watermark · UKHMS<br><small>Prototype v1</small></div></aside>
+<main class="main"><header class="topbar"><button id="menuBtn" class="icon-btn" aria-label="Menu">☰</button><div><span class="eyebrow">HOSPITAL MANAGEMENT</span><h2 id="pageTitle">Dashboard</h2></div><div class="user-pill"><div class="avatar">U</div><div><strong id="userName">Staff</strong><small id="userId">Staff ID</small></div><button id="logoutBtn" class="text-btn">Log out</button></div></header>
+<div class="content"><div id="view"></div><div class="footer">© 2026 <strong>UKHMS</strong> · Usadkura Hospital Management System<br>Contact: usmanaliyudatti@gmail.com · 08029238954 <span class="footer-mark">UKHMS</span></div></div></main>
+</div>
+<script src="app.js"></script>
+</body></html>
